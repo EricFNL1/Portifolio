@@ -11,7 +11,7 @@
 
   <header class="bg-dark text-white p-4">
     <div class="container">
-      <h1>Meu Portfólio</h1>
+      <h1>Eric Cesar Da Silva Junior</h1>
       <nav>
         <ul class="nav">
           <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
@@ -25,22 +25,24 @@
   <section id="about" class="p-4">
     <div class="container">
       <h2>Sobre Mim</h2>
-      <p>Coloque aqui uma descrição sobre você e suas habilidades.</p>
+      <h5>Me chamo Eric e tenho 20 anos. Sou graduado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando Desenvolvimento de Software Multiplataforma. Trabalho como Analista de Suporte Computacional em um provedor de Internet regional, onde atuo no suporte ao cliente e em equipamentos relacionados a redes, como roteadores de borda e convencionais, ONU, switch e Access Point. Além disso, possuo conhecimento em cabeamento estruturado, entre outras habilidades.
+
+        No ramo acadêmico e pessoal, sempre fui apaixonado por tecnologia e pela sua importância para o uso na sociedade atual. Desde os meus 15 anos, dedico-me a projetos de programação e gosto de mexer com hardware no tempo livre. Atualmente, estou em busca de vagas de emprego como desenvolvedor ou Analista de Suporte.</h5>
     </div>
   </section>
 
   <section id="portfolio" class="p-4">
     <div class="container">
-      <h2>Meu Portfólio</h2>
+      <h2 class="text-center">Meu Portfólio</h2>
       <div class="row">
-        <div class="col-md-4">
-          <img src="project1.jpg" alt="Projeto 1" class="img-fluid">
+        <div class="col-md-4 gallery">
+          <img src="img/projeto1.jpg" alt="Projeto 1" class="img-fluid expandable">
         </div>
-        <div class="col-md-4">
-          <img src="project2.jpg" alt="Projeto 2" class="img-fluid">
+        <div class="col-md-4 gallery">
+          <img src="project2.jpg" alt="Projeto 2" class="img-fluid expandable">
         </div>
-        <div class="col-md-4">
-          <img src="project3.jpg" alt="Projeto 3" class="img-fluid">
+        <div class="col-md-4 gallery">
+          <img src="project3.jpg" alt="Projeto 3" class="img-fluid expandable">
         </div>
       </div>
     </div>
@@ -70,6 +72,8 @@
   <footer class="bg-dark text-white text-center p-3">
     <p>&copy; 2024 Meu Portfólio</p>
   </footer>
+
+  <div id="overlay"></div> <!-- Movido o overlay para fora do body -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>

@@ -1,0 +1,38 @@
+h5 {
+    font-family: bold;
+    font-size: 22px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .expandable {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+
+  .overlay:hover {
+    opacity: 1; /* Torna o overlay visível ao passar o mouse sobre a imagem */
+  }
+  
+  .expanded-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
