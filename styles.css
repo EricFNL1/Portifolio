@@ -41,6 +41,28 @@ a:hover{
   text-decoration: none;
 }
 
+/* Tamanho Logo */
+
+.tamanhologo{
+  width: 50px;
+  height: 50px;
+}
+
+/* Leia Mais */
+
+.texto {
+  max-height: 150px; /* Altura máxima do texto antes de ser recortado */
+  overflow: hidden; /* Oculta o texto que excede a altura máxima */
+}
+
+.leia-mais {
+  display: block;
+  color: blue;
+  cursor: pointer;
+}
+.texto.expandido {
+  max-height: none;
+}
 
   
   

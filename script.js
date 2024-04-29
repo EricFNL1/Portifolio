@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  document.querySelector('.leia-mais').addEventListener('click', function() {
+    const texto = document.querySelector('.texto');
+    texto.classList.toggle('expandido');
+  
+    // Muda o texto do link dependendo se o texto está expandido ou não
+    if (texto.classList.contains('expandido')) {
+      this.textContent = 'Leia menos';
+    } else {
+      this.textContent = 'Leia mais';
+    }
+  });
+  
+
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
   
