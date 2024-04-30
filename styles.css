@@ -51,7 +51,7 @@ a:hover{
 /* Leia Mais */
 
 .texto {
-  max-height: 150px; /* Altura máxima do texto antes de ser recortado */
+  max-height: 146px; /* Altura máxima do texto antes de ser recortado */
   overflow: hidden; /* Oculta o texto que excede a altura máxima */
 }
 
@@ -66,6 +66,13 @@ a:hover{
 .ajuste{
 max-width: 200px;
 color: #070707;  
+}
+
+canvas{
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
 }
 
   

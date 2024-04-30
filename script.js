@@ -36,4 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
+var canvas = document.getElementById('meuCanvas');
+var ctx = canvas.getContext('2d')
+
+//desenho canvas
+
+ctx.fillStyle = '#007bff';
+ctx.fillRect(50, 50, 100, 200);
+
+//texto Canvas
+canvas.fillStyle = '#000';
+ctx.font = '20px Arial';
+ctx.fillText('Experiêcia Profissional', 200, 50);
   
