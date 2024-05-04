@@ -68,12 +68,23 @@ max-width: 200px;
 color: #070707;  
 }
 
-canvas{
-  font-family: Arial, sans-serif;
-  border: 1px solid #ccc;
-  display: block;
-  margin: 0 auto;
+/* Estilo adicional para o contêiner do iframe */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
 }
+
+/* Estilo adicional para o iframe */
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 
   
   
