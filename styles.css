@@ -8,6 +8,10 @@ h4{
   color:black
 }
 
+#cor{
+  color: black;
+}
+
 /* Código para imagem expandir*/
   #overlay {
     display: none;
