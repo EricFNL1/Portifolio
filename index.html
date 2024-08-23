@@ -28,6 +28,9 @@
               <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i> Portfólio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#cursos"><i class="fas fa-book"></i> Cursos</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#curriculo"><i class="fas fa-file-alt"></i> Currículo</a>
             </li>
             <li class="nav-item">
@@ -39,14 +42,13 @@
     </div>
   </header>
   
-
   <section id="about" class="p-4">
     <div class="container texto">
       <h2 id="textocontato">Sobre Mim</h2>
       <h5>
         Sou um profissional apaixonado por tecnologia, com formação em Análise e Desenvolvimento de Sistemas e atualmente cursando Desenvolvimento de Software Multiplataforma na Fatec. Durante minha carreira, adquiri uma sólida base em infraestrutura de redes e resolução de problemas técnicos, graças à minha experiência como Analista de Redes e Suporte a Sistemas.
         <span class="texto-completo">
-          Recentemente, decidi direcionar minha carreira para o desenvolvimento de software. Por meio de projetos pessoais e acadêmicos, venho adquirindo habilidades práticas em diversas tecnologias, incluindo HTML, CSS, PHP, Java, Laravel, JavaScript e MySQL. Meu objetivo é evoluir para uma posição como desenvolvedor full-stack, aplicando esses conhecimentos em ambientes profissionais e contribuindo para o sucesso dos projetos nos quais estiver envolvido. Estou sempre buscando novas oportunidades para expandir meu conhecimento e contribuir com soluções inovadoras e eficientes. No momento, estou em busca de vagas como desenvolvedor júnior e ficarei extremamente grato por qualquer indicação ou dica que possa me ajudar a alcançar esse objetivo.
+          Recentemente, decidi direcionar minha carreira para o desenvolvimento de software. Por meio de projetos pessoais e acadêmicos, venho adquirindo habilidades práticas em diversas tecnologias, incluindo HTML, CSS, PHP, Java, Laravel, JavaScript e MySQL. Meu objetivo é evoluir para uma posição como desenvolvedor full-stack, aplicando esses conhecimentos em ambientes profissionais e contribuindo para o sucesso dos projetos nos quais estiver envolvido.
         </span>
       </h5>
     </div>
@@ -81,7 +83,7 @@
           <div class="carousel-item">
             <img src="img/Dashboard.jpg" class="d-block w-100 tamanho img-fluid expandable" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <p class="destaque">Dashboard interativa criada com node utilizando a biblioteca chart.js, dados inseridos por uma API criada em python sistema criado com Laravel, foi utilizado MySQL para autenticação de usuários com senha criptografadas em hash e MongoDB para recolhimento dos dados gerados pelo API.</p>
+              <p class="destaque">Dashboard interativa criada com Node.js utilizando a biblioteca Chart.js, dados inseridos por uma API criada em Python.</p>
             </div>
           </div>
         </div>
@@ -98,11 +100,47 @@
           <button class="close-btn">Fechar</button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="p-4">
+    <div class="container">
+      <h2 class="text-center">Tecnologias</h2>
+    </div>
+
+  </section>
+
+  <!-- Seção Cursos com Carousel de Certificados -->
+  <section id="cursos" class="p-4">
+    <div class="container">
+      <h2 class="text-center">Meus Certificados</h2>
+      <div id="carouselCertificados" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/certificado1.jpg" class="d-block w-100" alt="Certificado 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/certificado2.jpg" class="d-block w-100" alt="Certificado 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/certificado3.jpg" class="d-block w-100" alt="Certificado 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertificados" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCertificados" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </section>
 
   <section id="curriculo" class="p-4 container mt-5" data-aos="fade-up">
     <div class="text-center">
-        <h2 class="mb-4" id="curriculo">Currículo</h2>
+        <h2 class="mb-4">Currículo</h2>
         <h3 class="text-center mb-3">"Clique no currículo para expandir"</h3>
         <div id="carouselExampleCurriculo" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
@@ -127,13 +165,11 @@
           </button>
         </div>
         <div class="text-center">
-          <h2 class="mb-4 mt-2" id="curriculo">Baixar Currículo</h2>
-          <a href="Eric Cesar da Silva Júnior.pdf" class="btn btn-primary animate__animated animate__pulse animate__infinite" download>
+          <a href="doc/Eric Cesar da Silva Júnior.pdf" class="btn btn-primary animate__animated animate__pulse animate__infinite" download>
             Baixar Currículo (PDF)
           </a>
         </div>
-        
-      </div>
+    </div>
   </section>
 
   <section id="contact" class=" container p-4 " data-aos="fade-up">
@@ -144,15 +180,12 @@
       <a href="https://www.instagram.com/nexustech957/"><img src="img/instagram-icon.png" alt="Icone Instagram" class="tamanhologo"></a>
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbFPpNZlgFPTbGxDtJhcxpvNkVjSNRGnPGqKjGjHdxbRNVdBKXxDfqXzXSCrGdtZnFbZsw"><img src="img/gmail-cone-icon-1.png" alt="Icone Gmail" id="logogmail"></a>
     </div>
-
   </section>
-
-  <br>
-  <br>
 
   <footer class="bg-dark text-white text-center p-3">
     <p>&copy; 2024 - Eric Junior</p>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
