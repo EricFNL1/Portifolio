@@ -124,6 +124,26 @@ a:hover {
   }
 }
 
+/* Ajuste para o H1 e o texto em dispositivos móveis */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 28px; /* Reduz o tamanho do H1 no celular */
+    text-align: center; /* Centraliza o título para melhor visualização */
+  }
+
+  h5 {
+    font-size: 16px; /* Diminui um pouco o tamanho da fonte para melhorar a legibilidade */
+    text-align: left; /* Altera o texto para alinhamento à esquerda em dispositivos móveis */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  }
+
+  .texto {
+    max-height: none; /* Remove a limitação de altura para que o texto seja exibido completo no celular */
+    overflow: visible; /* Permite que o texto seja totalmente exibido */
+  }
+}
+
+
 
 
 .ajuste {
