@@ -193,11 +193,33 @@ a:hover {
   transform: scale(1.05);
 }
 
+#textocontato{
+  display: flex;
+  justify-content: center; /* Alinha os ícones ao centro */
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: center; /* Alinha os ícones ao centro */
+  align-items: center;
+  gap: 15px; /* Espaçamento entre os ícones */
+  flex-wrap: wrap; /* Garante que em telas pequenas eles quebrem a linha */
+}
+
 #contact img {
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
   margin: 15px;
 }
 
 #contact img:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  #contact {
+    flex-direction: row; /* Garante que os ícones fiquem em linha */
+  }
 }
