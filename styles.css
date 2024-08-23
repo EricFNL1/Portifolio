@@ -201,25 +201,36 @@ a:hover {
 
 #contact {
   display: flex;
-  justify-content: center; /* Alinha os ícones ao centro */
+  justify-content: center;
   align-items: center;
-  gap: 15px; /* Espaçamento entre os ícones */
-  flex-wrap: wrap; /* Garante que em telas pequenas eles quebrem a linha */
+  gap: 15px;
+  flex-wrap: wrap; /* Permite que os ícones quebrem linha em telas pequenas */
+}
+
+#contact a {
+  display: inline-flex; /* Garante que o link se comporte como um bloco inline flexível */
+  justify-content: center; /* Centraliza o ícone dentro do link */
 }
 
 #contact img {
   width: 50px;
   height: 50px;
   transition: transform 0.3s ease;
-  margin: 15px;
 }
 
 #contact img:hover {
   transform: scale(1.2);
 }
 
+/* Ajuste para dispositivos móveis */
 @media (max-width: 576px) {
   #contact {
-    flex-direction: row; /* Garante que os ícones fiquem em linha */
+    flex-direction: row; /* Garante que os ícones permaneçam em linha, mas ajustem-se conforme o espaço */
+    justify-content: space-around; /* Centraliza e distribui os ícones igualmente em telas menores */
+  }
+
+  #contact img {
+    width: 40px; /* Tamanho menor para telas pequenas */
+    height: 40px;
   }
 }
