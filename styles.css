@@ -127,7 +127,7 @@ a:hover {
 /* Ajuste para o H1 e o texto em dispositivos móveis */
 @media (max-width: 576px) {
   h1 {
-    font-size: 28px; /* Reduz o tamanho do H1 no celular */
+    font-size: 24px; /* Reduz o tamanho do H1 no celular */
     text-align: center; /* Centraliza o título para melhor visualização */
   }
 
