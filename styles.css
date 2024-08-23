@@ -1,4 +1,5 @@
 h5 {
+<<<<<<< HEAD
     font-family: bold;
     font-size: 22px;
   }
@@ -34,26 +35,96 @@ h4{
 /* Código para fazer efeito de "Pulso"*/
 a:link, #cab a:visited{
 
+=======
+  font-family: bold;
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 12px;
+  color: black;
+}
+
+h3{
+  font-size: 12px;
+  font-style: italic;
+}
+
+#cor {
+  color: black;
+}
+
+/* Código para imagem expandir */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.expanded-image {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* Estilo do botão de fechar */
+.close-btn {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  background-color: darkred;
+}
+
+/* Código para fazer efeito de "Pulso" */
+a:link, #cab a:visited {
+>>>>>>> 38ad9d3 (Atualizãção)
   color: #0d1cf3;
   padding: 8px 12px;
 }
 
+<<<<<<< HEAD
 a:hover{
 
+=======
+a:hover {
+>>>>>>> 38ad9d3 (Atualizãção)
   color: #1a1717;
   background: #FFF;
   text-decoration: none;
 }
 
 /* Tamanho Logo */
+<<<<<<< HEAD
 
 .tamanhologo{
+=======
+.tamanhologo {
+>>>>>>> 38ad9d3 (Atualizãção)
   width: 50px;
   height: 50px;
 }
 
 /* Leia Mais */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 38ad9d3 (Atualizãção)
 .texto {
   max-height: 146px; /* Altura máxima do texto antes de ser recortado */
   overflow: hidden; /* Oculta o texto que excede a altura máxima */
@@ -63,13 +134,23 @@ a:hover{
   display: block;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 38ad9d3 (Atualizãção)
 .texto.expandido {
   max-height: none;
 }
 
+<<<<<<< HEAD
 .ajuste{
 max-width: 200px;
 color: #070707;  
+=======
+.ajuste {
+  max-width: 200px;
+  color: #070707;
+>>>>>>> 38ad9d3 (Atualizãção)
 }
 
 /* Estilo adicional para o contêiner do iframe */
@@ -89,6 +170,17 @@ color: #070707;
   border: 0;
 }
 
+<<<<<<< HEAD
 
   
   
+=======
+.tamanho {
+  width: 1000px;
+  height: 600px;
+}
+
+.destaque {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+>>>>>>> 38ad9d3 (Atualizãção)
