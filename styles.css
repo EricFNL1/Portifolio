@@ -1,3 +1,7 @@
+h1{
+  font-size: 32px;
+}
+
 h5 {
   font-family: bold;
   font-size: 22px;
@@ -15,6 +19,12 @@ h3 {
 
 #cor {
   color: black;
+}
+
+#logoFoto{
+  width: 100px;
+  height: 100px;
+  display: inline;;
 }
 
 /* Código para imagem expandir */
@@ -70,7 +80,6 @@ a:hover {
 .tamanhologo {
   width: 50px;
   height: 50px;
-  align-items: end;
 }
 #logogmail{
   width: 50px;
@@ -81,6 +90,16 @@ a:hover {
 .texto {
   max-height: 152px; /* Altura máxima do texto antes de ser recortado */
   overflow: hidden; /* Oculta o texto que excede a altura máxima */
+  text-align: justify;
+}
+
+.texto-completo {
+  display: none; /* O texto adicional começa escondido */
+  text-align: justify;
+}
+
+.texto.expandido .texto-completo {
+  display: inline; /* Quando expandido, o texto adicional aparece */
 }
 
 .leia-mais {
@@ -91,6 +110,21 @@ a:hover {
 .texto.expandido {
   max-height: none;
 }
+
+/* Ajustes para telas menores (dispositivos móveis) */
+@media (max-width: 576px) {
+  .texto {
+    font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
 
 .ajuste {
   max-width: 200px;
