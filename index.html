@@ -12,15 +12,33 @@
   <header class="bg-dark text-white p-4">
     <div class="container">
       <h1>Eric Cesar Da Silva Junior</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item active" id="cab">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item" id="cab">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item" id="cab">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+            <li class="nav-item" id="cab">
+              <a class="nav-link" href="#curriculo">Curriculo</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
+  
+
+ 
 
   <section id="about" class="p-4">
     <div class="container texto">
@@ -36,16 +54,17 @@
 
   <section id="portfolio" class="p-4">
     <div class="container">
-      <h2 class="text-center mb-4">Meu Portfólio</h2>
+      <h2 class="text-center">Meu Portfólio</h2>
+      <h3 class="text-center mb-3">"Clique na imagem para expandir"</h3>
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" class="esconder"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="esconder"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="esconder"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/projeto1.jpg" class="d-block w-100 tamanho img-fluid expandable" alt="...">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="img/WebSite - ITalia.png" class="d-block w-100 tamanho img-fluid expandable" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <p class="destaque">Projeto Website com Laravel.</p>
             </div>
@@ -80,7 +99,7 @@
 
   <section id="curriculo" class="p-4 container mt-5">
     <div class="text-center">
-        <h2 class="mb-4">Currículo</h2>
+        <h2 class="mb-4" id="curriculo">Currículo</h2>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="Eric Cesar da Silva Júnior.pdf" title="Currículo" frameborder="0"></iframe>
         </div>

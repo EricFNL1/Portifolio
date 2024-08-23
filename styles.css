@@ -8,6 +8,11 @@ h4 {
   color: black;
 }
 
+h3 {
+  font-size: 12px;
+  font-style: italic;
+}
+
 #cor {
   color: black;
 }
@@ -51,13 +56,13 @@ h4 {
 
 /* Código para fazer efeito de "Pulso" */
 a:link, #cab a:visited {
-  color: #0d1cf3;
+  color: #fdfdff;
   padding: 8px 12px;
 }
 
 a:hover {
   color: #1a1717;
-  background: #FFF;
+  background: #ffffff21;
   text-decoration: none;
 }
 
@@ -69,7 +74,7 @@ a:hover {
 
 /* Leia Mais */
 .texto {
-  max-height: 146px; /* Altura máxima do texto antes de ser recortado */
+  max-height: 152px; /* Altura máxima do texto antes de ser recortado */
   overflow: hidden; /* Oculta o texto que excede a altura máxima */
 }
 
@@ -104,11 +109,19 @@ a:hover {
   border: 0;
 }
 
+/* Responsividade e ajuste de proporções da imagem */
 .tamanho {
-  width: 1000px;
-  height: 600px;
+  width: 100%;
+  height: auto; /* Ajusta automaticamente a altura para manter a proporção */
+  max-width: 1000px; /* Limita a largura máxima da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
 }
 
+/* Estilo destaque */
 .destaque {
   background-color: rgba(255, 255, 255, 0.801);
+}
+
+.esconder{
+  display: none;
 }
