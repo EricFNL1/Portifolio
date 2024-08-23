@@ -185,3 +185,19 @@ a:hover {
   display: none;
 }
 
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+#contact img {
+  transition: transform 0.3s ease;
+  margin: 15px;
+}
+
+#contact img:hover {
+  transform: scale(1.2);
+}
