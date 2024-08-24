@@ -118,6 +118,26 @@ a:hover {
   }
 }
 
+/* Ajuste para o H1 e o texto em dispositivos móveis */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px; /* Reduz o tamanho do H1 no celular */
+    text-align: center; /* Centraliza o título para melhor visualização */
+  }
+
+  h5 {
+    font-size: 16px; /* Diminui um pouco o tamanho da fonte para melhorar a legibilidade */
+    text-align: left; /* Altera o texto para alinhamento à esquerda em dispositivos móveis */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  }
+
+  .texto {
+    max-height: none; /* Remove a limitação de altura para que o texto seja exibido completo no celular */
+    overflow: visible; /* Permite que o texto seja totalmente exibido */
+  }
+}
+
+
 
 
 .ajuste {
@@ -157,4 +177,54 @@ a:hover {
 
 .esconder{
   display: none;
+}
+
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+#textocontato{
+  display: flex;
+  justify-content: center; /* Alinha os ícones ao centro */
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Permite que os ícones quebrem linha em telas pequenas */
+}
+
+#contact a {
+  display: inline-flex; /* Garante que o link se comporte como um bloco inline flexível */
+  justify-content: center; /* Centraliza o ícone dentro do link */
+}
+
+#contact img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+  transform: scale(1.2);
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 576px) {
+  #contact {
+    flex-direction: row; /* Garante que os ícones permaneçam em linha, mas ajustem-se conforme o espaço */
+    justify-content: space-around; /* Centraliza e distribui os ícones igualmente em telas menores */
+  }
+
+  #contact img {
+    width: 40px; /* Tamanho menor para telas pequenas */
+    height: 40px;
+  }
 }
