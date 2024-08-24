@@ -21,12 +21,6 @@ h3 {
   color: black;
 }
 
-#logoFoto{
-  width: 100px;
-  height: 100px;
-  display: inline;;
-}
-
 /* Código para imagem expandir */
 #overlay {
   display: none;
