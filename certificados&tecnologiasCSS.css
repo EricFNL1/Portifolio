@@ -1,48 +1,30 @@
 /* Estilo para animação de hover nos cards */
 .animate-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     opacity: 0;
     transform: translateY(30px);
 }
 
 .animate-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Animação de fade-in */
-.fade-in {
-    animation: fadeIn 0.5s ease forwards;
-}
-
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.animate-card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.animate-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Animação de fade-in */
 .fade-in {
     opacity: 0;
-    animation: fadeInAnimation 1s forwards;
+    animation: fadeIn 1s forwards;
 }
 
-@keyframes fadeInAnimation {
-    to {
-        opacity: 1;
-    }
+/* Aplicando animação progressiva */
+.fade-in-active {
+    opacity: 1;
+    animation: fadeIn 1s forwards;
 }
