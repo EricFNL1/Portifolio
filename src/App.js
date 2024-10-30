@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaLinkedin, FaWhatsapp, FaInstagram, FaEnvelope, FaLaptopCode, FaSun, FaMoon } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaInstagram, FaEnvelope, FaLaptopCode, FaSun, FaMoon, FaDownload } from 'react-icons/fa';
 import './App.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'; 
@@ -145,14 +145,16 @@ function App() {
   };
 
   const buttonStyle = {
-    backgroundColor: '#007bff',
+    backgroundColor: darkMode ? '#0056b3' : '#007bff',
     color: 'white',
     padding: '15px 30px',
     border: 'none',
     borderRadius: '5px',
     textDecoration: 'none',
     fontSize: '1rem',
-    transition: 'background-color 0.3s'
+    transition: 'background-color 0.3s',
+    boxShadow: '0px 4px 15px rgba(0, 123, 255, 0.5)',
+    fontWeight: '500'
   };
 
   const sliderSettings = {
@@ -164,6 +166,13 @@ function App() {
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
@@ -189,11 +198,11 @@ function App() {
       <section id="about" style={sectionStyle}>
         <div style={containerStyle}>
           <h2 style={{ textAlign: 'center', color: '#007bff', marginBottom: '40px' }}>Sobre Mim</h2>
-          <div className="row" style={{ display: 'flex', alignItems: 'center' }}>
-            <div className="col-md-6" style={{ textAlign: 'center' }}>
-              <img src="img/eric-profile.jpg" style={{ borderRadius: '50%', width: '80%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} alt="Foto de Eric Cesar Da Silva Junior" />
+          <div className="row" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div className="col-md-6" style={{ textAlign: 'center', flex: '1 1 50%', maxWidth: '50%' }}>
+              <img src="img/eric-profile.jpg" style={{ borderRadius: '50%', width: '80%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', maxWidth: '300px' }} alt="Foto de Eric Cesar Da Silva Junior" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" style={{ flex: '1 1 50%', maxWidth: '50%' }}>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
                 Sou um profissional apaixonado por tecnologia, com formação em Análise e Desenvolvimento de Sistemas e atualmente cursando Desenvolvimento de Software Multiplataforma na Fatec. Durante minha carreira, adquiri uma sólida base em infraestrutura de redes e resolução de problemas técnicos, além de desenvolver habilidades em diversas tecnologias de software.
               </p>
@@ -207,8 +216,7 @@ function App() {
 
       <section id="portfolio" style={sectionStyle}>
         <div style={containerStyle}>
-          <h2 style={{ textAlign: 'center', color: '#007bff' }}>Meu Portfólio</h2>
-          <p style={{textAlign: 'center', marginBottom: '50px'}}>(Clique nas imagens para visualizar em tela cheia)</p>
+          <h2 style={{ textAlign: 'center', color: '#007bff', marginBottom: '50px' }}>Meu Portfólio</h2>
           <Slider {...sliderSettings}>
             <div className="card" style={cardStyle}>
               <img src="img/Projeto-Nexus.png" style={cardImageStyle} alt="Projeto Website Nexus" />
@@ -247,56 +255,49 @@ function App() {
           <h2 style={{ textAlign: 'center', color: '#007bff', marginBottom: '40px' }}>Certificados</h2>
           <Slider {...sliderSettings}>
             <div className="card" style={cardStyle}>
-              <img src="img/certificado1.png" style={cardImageStyle} alt="Certificado Curso React" />
+              <img src="img/Diploma-Faculdade.png" style={cardImageStyle} alt="Certificado Curso React" />
               <div style={cardBodyStyle}>
-                <h5 style={{ marginBottom: '15px' }}>Curso React</h5>
-                <p>Certificado de conclusão do curso de React.</p>
+                <h5 style={{ marginBottom: '15px' }}>Certificado Faculdade</h5>
+                <p>Certificado de conclusão de graduação de Análise e Desenvolvimento de Sistemas.</p>
               </div>
             </div>
             <div className="card" style={cardStyle}>
-              <img src="img/certificado2.png" style={cardImageStyle} alt="Certificado Curso JavaScript" />
+              <img src="img/js-certificado.png" style={cardImageStyle} alt="Certificado Curso JavaScript" />
               <div style={cardBodyStyle}>
                 <h5 style={{ marginBottom: '15px' }}>Curso JavaScript</h5>
                 <p>Certificado de conclusão do curso de JavaScript.</p>
               </div>
             </div>
             <div className="card" style={cardStyle}>
-              <img src="img/certificado3.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
+              <img src="img/suporteeseguranca.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
               <div style={cardBodyStyle}>
-                <h5 style={{ marginBottom: '15px' }}>Curso Laravel</h5>
-                <p>Certificado de conclusão do curso de Laravel.</p>
+                <h5 style={{ marginBottom: '15px' }}>Network Support and Security</h5>
+                <p>Certificado de conclusão do curso de Network Support and Security.</p>
               </div>
             </div>
             <div className="card" style={cardStyle}>
-              <img src="img/certificado3.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
+              <img src="img/Curso-Desenvolvedor-Front-End-CPS.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
               <div style={cardBodyStyle}>
-                <h5 style={{ marginBottom: '15px' }}>Curso Laravel</h5>
-                <p>Certificado de conclusão do curso de Laravel.</p>
+                <h5 style={{ marginBottom: '15px' }}>Desenvolvedor Front-End</h5>
+                <p>Certificado de reconhecimento adquirido na Fatec.</p>
               </div>
             </div>
             <div className="card" style={cardStyle}>
-              <img src="img/certificado3.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
+              <img src="img/Imersão-Mikrotik.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
               <div style={cardBodyStyle}>
-                <h5 style={{ marginBottom: '15px' }}>Curso Laravel</h5>
-                <p>Certificado de conclusão do curso de Laravel.</p>
-              </div>
-            </div>
-            <div className="card" style={cardStyle}>
-              <img src="img/certificado3.png" style={cardImageStyle} alt="Certificado Curso Laravel" />
-              <div style={cardBodyStyle}>
-                <h5 style={{ marginBottom: '15px' }}>Curso Laravel</h5>
-                <p>Certificado de conclusão do curso de Laravel.</p>
+                <h5 style={{ marginBottom: '15px' }}>Imersão Mikrotik</h5>
+                <p>Certificado de conclusão do curso de Imersão Mikrotik.</p>
               </div>
             </div>
           </Slider>
         </div>
       </section>
 
-      <section id="curriculo" style={{ ...sectionStyle, backgroundColor: '#f9f9f9' }}>
+      <section id="curriculo" style={{ ...sectionStyle, backgroundColor: darkMode ? '#2c2c2c' : '#f0f4f8', padding: '60px 0', textAlign: 'center' }}>
         <div style={containerStyle} className="text-center">
-          <h2 style={{ color: '#007bff', marginBottom: '20px' }}>Currículo</h2>
-          <p>Clique no botão abaixo para visualizar ou baixar meu currículo completo:</p>
-          <a href="doc/Eric Cesar da Silva Junior.pdf" style={buttonStyle} onMouseOver={(e) => e.target.style.backgroundColor = '#0056b3'} onMouseOut={(e) => e.target.style.backgroundColor = '#007bff'} download>Baixar Currículo (PDF)</a>
+          <h2 style={{ color: '#007bff', marginBottom: '20px', fontSize: '2rem', fontWeight: '600' }}>Currículo</h2>
+          <p style={{ fontSize: '1.1rem', marginBottom: '30px', lineHeight: '1.6', color: darkMode ? '#e0e0e0' : '#000', }}>Abaixo você pode visualizar ou baixar meu currículo completo. Sinta-se à vontade para entrar em contato se precisar de mais informações.</p>
+          <a href="doc/Eric Cesar da Silva Junior.pdf" style={{ ...buttonStyle, backgroundColor: darkMode ? '#007bff' : '#0056b3', color: '#fff' }} onMouseOver={(e) => e.target.style.backgroundColor = darkMode ? '#0056b3' : '#004494'} onMouseOut={(e) => e.target.style.backgroundColor = darkMode ? '#007bff' : '#0056b3'} download>Baixar Currículo (PDF) <FaDownload style={{ marginLeft: '8px' }} /></a>
         </div>
       </section>
 
@@ -306,16 +307,16 @@ function App() {
           <h2 style={{ color: '#007bff', marginBottom: '20px',textAlign: 'center'}} >Contato</h2>
           <p style={{textAlign: 'center'}}>Entre em contato comigo através das redes sociais ou e-mail:</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <a href="https://www.linkedin.com/in/ericf12/" style={{ display: 'inline-block', fontSize: '2rem', color: '#0077b5' }}>
+            <a href="https://www.linkedin.com/in/ericf12/" style={{ display: 'inline-block', fontSize: '2.5rem', color: '#0077b5' }}>
               <FaLinkedin />
             </a>
-            <a href="https://wa.me/19983224023" style={{ display: 'inline-block', fontSize: '2rem', color: '#25D366' }}>
+            <a href="https://wa.me/19983224023" style={{ display: 'inline-block', fontSize: '2.5rem', color: '#25D366' }}>
               <FaWhatsapp />
             </a>
-            <a href="https://www.instagram.com/faria_eric" style={{ display: 'inline-block', fontSize: '2rem', color: '#E1306C' }}>
+            <a href="https://www.instagram.com/faria_eric" style={{ display: 'inline-block', fontSize: '2.5rem', color: '#E1306C' }}>
               <FaInstagram />
             </a>
-            <a href="mailto:eric.faria2003@gmail.com" style={{ display: 'inline-block', fontSize: '2rem', color: '#D44638' }}>
+            <a href="mailto:eric.faria2003@gmail.com" style={{ display: 'inline-block', fontSize: '2.5rem', color: '#D44638' }}>
               <FaEnvelope />
             </a>
           </div>
