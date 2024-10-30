@@ -216,7 +216,8 @@ function App() {
 
       <section id="portfolio" style={sectionStyle}>
         <div style={containerStyle}>
-          <h2 style={{ textAlign: 'center', color: '#007bff', marginBottom: '50px' }}>Meu Portfólio</h2>
+          <h2 style={{ textAlign: 'center', color: '#007bff' }}>Meu Portfólio</h2>
+          <p style={{textAlign: 'center', marginBottom: '50px'}}>Clique nas imagens para visualizar em tela cheia.</p>
           <Slider {...sliderSettings}>
             <div className="card" style={cardStyle}>
               <img src="img/Projeto-Nexus.png" style={cardImageStyle} alt="Projeto Website Nexus" />
