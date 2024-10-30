@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/EricFNL1/Portifolio/static/css/main.8b6f2703.css",
+    "main.js": "/EricFNL1/Portifolio/static/js/main.25701931.js",
+    "static/js/453.6f6e8598.chunk.js": "/EricFNL1/Portifolio/static/js/453.6f6e8598.chunk.js",
+    "static/media/slick.svg": "/EricFNL1/Portifolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/EricFNL1/Portifolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/EricFNL1/Portifolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/EricFNL1/Portifolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/EricFNL1/Portifolio/index.html",
+    "main.8b6f2703.css.map": "/EricFNL1/Portifolio/static/css/main.8b6f2703.css.map",
+    "main.25701931.js.map": "/EricFNL1/Portifolio/static/js/main.25701931.js.map",
+    "453.6f6e8598.chunk.js.map": "/EricFNL1/Portifolio/static/js/453.6f6e8598.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b6f2703.css",
+    "static/js/main.25701931.js"
+  ]
+}
