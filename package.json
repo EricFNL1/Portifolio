@@ -1,23 +1,24 @@
 {
   "name": "portifolio-atualizado",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "@testing-library/jest-dom": "^5.18.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "react": "^18.3.2",
+    "react-dom": "^18.3.2",
+    "react-scripts": "5.1.0",
+    "web-vitals": "^3.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b react -d build" 
   },
   "eslintConfig": {
     "extends": [
@@ -32,9 +33,11 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 safari versions"
     ]
-  }
+  },
+  "homepage": "https://EricFNL1.github.io/Portifolio/tree/teste"
+
 }
