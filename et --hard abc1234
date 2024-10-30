@@ -1,0 +1,29 @@
+[33mcommit 35f2b8740b312ff0370ec7618a4af8dd840c7d5b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mreact[m[33m)[m
+Author: Eric Junior <eric.faria2003@gmail.com>
+Date:   Wed Oct 30 08:47:32 2024 -0300
+
+    Base portifolio atualizada 3
+
+[33mcommit 508c2b8193b90f459703364702b05660b092fd65[m
+Author: Eric Junior <eric.faria2003@gmail.com>
+Date:   Wed Oct 30 01:46:21 2024 -0300
+
+    Base portifolio atualizada 2
+
+[33mcommit 4ceb8276a2cd9941572330e1e91940bc0118bc0e[m
+Author: Eric Junior <eric.faria2003@gmail.com>
+Date:   Wed Oct 30 01:44:34 2024 -0300
+
+    Base portifolio atualizada
+
+[33mcommit 23c41e78e31882c08ecc627622f1b26626dd5f3e[m[33m ([m[1;32mmain[m[33m)[m
+Author: Eric Junior <eric.faria2003@gmail.com>
+Date:   Tue Oct 29 17:26:54 2024 -0300
+
+    Base portifolio
+
+[33mcommit a05dfd9396d044fbecb8da4da8e02da7f6401dbc[m
+Author: Eric Junior <eric.faria2003@gmail.com>
+Date:   Tue Oct 29 11:24:31 2024 -0300
+
+    Initialize project using Create React App
